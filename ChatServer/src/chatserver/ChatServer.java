@@ -67,7 +67,7 @@ public class ChatServer {
         entertextgui entergui = new entertextgui();
         txtTinNhan.addKeyListener(entergui);
 
-        btnGui = new JButton("Gui");
+        btnGui = new JButton("Gửi");
         btnGui.setBounds(320, 320, 80, 30);
         Gui gd = new Gui();
         btnGui.addActionListener(gd);
@@ -83,11 +83,11 @@ public class ChatServer {
 
     public ChatServer() {
         GiaoDien(); // tạo giao diện
-        KhoiTao();
+        KhoiTaoSocket();
 
     }
 
-    private void KhoiTao() {
+    private void KhoiTaoSocket() {
 
         try {
             ss = new ServerSocket(1234);
